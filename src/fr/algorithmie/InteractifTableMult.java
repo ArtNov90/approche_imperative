@@ -2,10 +2,9 @@ package fr.algorithmie;
 
 import java.util.Scanner;
 
-public class InteractifTantQue {
+public class InteractifTableMult {
 
 	public static void main(String[] args) {
-
 		Scanner scanner = new Scanner(System.in);
 		int nb;
 
@@ -14,10 +13,13 @@ public class InteractifTantQue {
 			nb = scanner.nextInt();
 		} while (nb < 1 || nb > 10);
 
-		System.out.println("Le nombre que vous avez entré est : " + nb);
+		System.out.println("Table de " + nb + " :");
+		for (int i = 1; i <= 10; i++) {
+			System.out.println(nb + " * " + i + " = " + (nb * i));
 
-		scanner.close();
+			scanner.close();
+
+		}
 
 	}
-
 }
